@@ -1,5 +1,5 @@
 ---
-title: "获取YouTube栏目视频标题"
+title: "一个多线程引用捕获问题"
 date: 2024-12-10
 tags: [c++, lambda, 多线程]
 ---
