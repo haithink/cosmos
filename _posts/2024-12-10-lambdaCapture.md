@@ -32,3 +32,13 @@ tags: [c++, lambda, 多线程]
 
 这个问题困扰了自己至少一个小时！
 
+又和AI交互了下，发现捕获列表也可以写成下面这样，毕竟简洁点
+```c++
+    for (int i = 0; i < 2; i++) {
+        threads.push_back(std::thread([&, i]()
+                                        { 
+                                            sessionArr[i]->doInference(images[i], results[i].first, results[i].second, 1000); 
+                                        }
+                                    ));
+    }
+```
