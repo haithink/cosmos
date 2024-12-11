@@ -37,7 +37,7 @@ tags: [c++, lambda, 多线程]
     for (int i = 0; i < 2; i++) {
         threads.push_back(std::thread([&, i]()
                                         { 
-                                            sessionArr[i]->doInference(images[i], results[i].first, results[i].second, 1000); 
+                                            xxx[i]->func(images[i], results[i].first, results[i].second); 
                                         }
                                     ));
     }
