@@ -1,5 +1,5 @@
 ---
-title: "SuperPoint环境搭建和训练"
+title: "SuperPoint环境搭建"
 date: 2024-12-11
 tags: [SuperPoint, 深度学习, tensorflow]
 ---
@@ -42,5 +42,12 @@ nvidia-nvjitlink-cu12         12.4.127
 nvidia-pyindex                1.0.9
 nvidia-tensorflow             1.15.5+nv23.3
 ```
+把这些装好后，对前面的开源代码进行一些额外修改，比如yaml库升级，会导致相关API调用变化。然后就能跑起训练流程了。
+
+https://github.com/eric-yyjau/pytorch-superpoint，有人用pytorch实现了下，但好像还不是很完善或者说那么易用，具体效果还没细看，但也是一个有价值的工作。
+
+目前深度学习搞特征提取的很多，但真正落地的有哪些？SuperPoint应该是一个。
+
+
 
 
